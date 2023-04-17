@@ -56,4 +56,4 @@ public static void mostrarInformacion(String mas_menos) {
     String mensaje = mas_menos;
     JOptionPane.showMessageDialog(null, mensaje);
 }
-}
+} 
