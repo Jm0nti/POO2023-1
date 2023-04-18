@@ -36,7 +36,7 @@ public class Main {
                 double perimetro = Perimetro.calcularPerimetro(lado);
                 double area = Area.calcularArea(lado);
                 double altura = Altura.calcularAltura(lado);
-                mostrarInformacion(altura, area, perimetro);
+                mostrarInformacion(altura, area, perimetro); 
 
 }
 });

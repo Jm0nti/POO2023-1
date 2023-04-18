@@ -71,19 +71,11 @@ public class Main {
                 double numHoras = Double.parseDouble(numhText.getText());
                 double valorHora = Double.parseDouble(valorhText.getText());
                 double retencion = Double.parseDouble(retencionText.getText());
-                double salarioBruto = calcularSalarioBruto(numHoras, valorHora);
-                double salarioNeto = calcularSalarioNeto(salarioBruto, retencion);
+                double salarioBruto = SalarioBruto.calcularSalarioBruto(numHoras, valorHora);
+                double salarioNeto = SalarioNeto.calcularSalarioNeto(salarioBruto, retencion);
                 mostrarInformacionEmpleado(codigo, nombre, salarioBruto, salarioNeto);
             }
         });
-    }
-
-    public static double calcularSalarioBruto(double numHoras, double valorHora) {
-        return numHoras * valorHora;
-    }
-
-    public static double calcularSalarioNeto(double salarioBruto, double retencion) {
-        return salarioBruto * (1 - retencion / 100);
     }
 
     public static void mostrarInformacionEmpleado(String codigo, String nombre, double salarioBruto, double salarioNeto) {
